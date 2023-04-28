@@ -1,0 +1,20 @@
+# NOTE: you can use vars with $<var> and ${<var>} as long as the str is double quoted: ""
+# WARNING: hex colors can't contain capital letters
+
+# Dark theme from: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
+# TODO: Add variants?
+
+# --> OneDark Theme
+thm_bg="#282c34"
+thm_fg="#abb2bf"
+thm_cyan="#56b6c2"
+thm_black="#181a1f"
+thm_gray="#5c6370"
+thm_magenta="#c678dd"
+thm_pink="#f4b8e4" # not part of one_dark
+thm_red="#e86671"
+thm_green="#98c379"
+thm_yellow="#e5c07b"
+thm_blue="#61afef"
+thm_orange="#d19a66"
+thm_black4="#3b3f4c" # not part of one_dark, used `bg3`
