@@ -3,7 +3,7 @@
 
 ## Themes
 
-- 🌻 [onedark](./onedark.tmuxtheme)
+- 🌕 [dark](./onedark-dark.tmuxtheme)
 
 ## Usage
 
