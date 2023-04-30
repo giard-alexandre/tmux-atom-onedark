@@ -93,6 +93,16 @@ You can change this to whatever you like by using the `onedark_left_status` vari
 set -g @onedark_left_status "#{battery_status_bg} Batt: #{battery_icon} #{battery_percentage} #{battery_remain}"
 ```
 
+##### Status-Justify
+
+By default, we set the tmux `status-justify` variable to `left`.
+If you would like to change that, just set the `onedark_status_justify`.
+It accepts the same values as `status-justify`
+
+```sh
+set -g @onedark_status_justify "centre"
+```
+
 ## 💝 Thanks to
 
 - [Pocco81](https://github.com/catppuccin) and anyone else involved in Catpuccin 😊

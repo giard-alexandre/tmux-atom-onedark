@@ -41,7 +41,6 @@ main() {
   # status
   set status "on"
   set status-bg "${thm_bg}"
-  set status-justify "left"
   set status-left-length "100"
   set status-right-length "100"
 
@@ -88,6 +87,10 @@ main() {
   local left_status
   left_status="$(get_tmux_option "@onedark_left_status" "")"
   readonly left_status
+
+  local status_justify
+  status_justify="$(get_tmux_option "@onedark_status_justify" "left")"
+  readonly status_justify
 
   # These variables are the defaults so that the setw and set calls are easier to parse.
   local show_directory
@@ -151,6 +154,7 @@ main() {
   fi
 
   set status-left "$left_status"
+  set status-justify "$status_justify"
 
   set status-right "${right_column1},${right_column2}"
 
