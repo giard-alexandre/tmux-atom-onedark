@@ -85,6 +85,10 @@ main() {
   date_time="$(get_tmux_option "@onedark_date_time" "off")"
   readonly date_time
 
+  local left_status
+  left_status="$(get_tmux_option "@onedark_left_status" "")"
+  readonly left_status
+
   # These variables are the defaults so that the setw and set calls are easier to parse.
   local show_directory
   readonly show_directory="#[fg=$thm_pink,bg=$thm_bg,nobold,nounderscore,noitalics]$right_separator#[fg=$thm_bg,bg=$thm_pink,nobold,nounderscore,noitalics]  #[fg=$thm_fg,bg=$thm_gray] #{b:pane_current_path} #{?client_prefix,#[fg=$thm_red]"
@@ -146,7 +150,7 @@ main() {
     right_column2=$right_column2$show_date_time
   fi
 
-  set status-left ""
+  set status-left "$left_status"
 
   set status-right "${right_column1},${right_column2}"
 

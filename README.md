@@ -84,6 +84,15 @@ It can be enabled by toggoling it on.
 set -g @onedark_host "on"
 ```
 
+##### Add Custom Left Status
+
+By default, we set the `status-left` variable to an empty string.
+You can change this to whatever you like by using the `onedark_left_status` variable.
+
+```sh
+set -g @onedark_left_status "#{battery_status_bg} Batt: #{battery_icon} #{battery_percentage} #{battery_remain}"
+```
+
 ## 💝 Thanks to
 
 - [Pocco81](https://github.com/catppuccin) and anyone else involved in Catpuccin 😊
